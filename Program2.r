@@ -62,20 +62,14 @@ print(df1)
 
 
 #Reading data from External File
-df1=read.table("C:/Users/yaswanth yash/Desktop/Data1.txt",header = TRUE,sep = "\t")
-print(df1)
+t<-read.table("sample.txt",header = TRUE)
+print(t)
 
-df=read.csv("C:/Users/yaswanth yash/Desktop/Data1.csv")
-print(df)
+data <- read.csv("sample.csv")
+print(data)
 
+data <- c("c++","Python", "R")
+print(data)
 
-#Writing data to file
-data=c("Gitam","BCA","BLR")
-write(data,"sam1.txt",ncolumns = 3)
-write.csv(data,"sam1.csv")
-
-
-df3=read.table("sam1.txt")
-print(df3)
-df4=read.csv("sam1.csv")
-print(df4)
+write(data, file="sample.txt",ncolumns = 3)
+read.table("sample.txt")
