@@ -19,8 +19,8 @@ sub1=substring(s1,1,3)
 print(sub1)
 
 #Replacing
-s6="yaswanth siva kumar"
-substr(s6,1,8)=c("YASWANTH")
+s6="Who am I?"
+substr(s6,1,8)=c("who")
 print(s6)
 
 #Scanning
